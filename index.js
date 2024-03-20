@@ -13,6 +13,7 @@ selectedColor.onclick = (e)=>{
     }else if(color==='red'){
         //red umbrela
         umbrela.src='/images/#';
+        bgColor.style.background="rgba(255, 0, 0, 0.4)";
     }else if(color==='blue'){
         //blue umbrela
         umbrela.src='/images/Blue umbrella.png';
@@ -21,6 +22,14 @@ selectedColor.onclick = (e)=>{
         //pink umbrela
         umbrela.src='/images/Pink umbrella.png';
         bgColor.style.background="lightpink"
+    }else if(color==='black'){
+        //red umbrela
+        umbrela.src='/images/#';
+        bgColor.style.background="rgba(0, 0, 0, 0.5)";
+    }else if(color==='darkgray'){
+        //red umbrela
+        umbrela.src='/images/#';
+        bgColor.style.background="rgba(0, 0, 0, 0.1)";
     }
     
 }
