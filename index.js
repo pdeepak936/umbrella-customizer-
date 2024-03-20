@@ -1,16 +1,35 @@
-function clickFunction(){
-    var randomNumber1 = Math.floor(Math.random() * 6) +1;
-    var randomImageSource1 = "images/dice" + randomNumber1 + ".png";
-    document.querySelectorAll("img")[0].setAttribute("src", randomImageSource1);
-    var randomNumber2 = Math.floor(Math.random() * 6) +1;
-    var randomImageSource2 = "images/dice" + randomNumber2 + ".png";
-    document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
-    
-    if(randomNumber1>randomNumber2){
-        document.querySelectorAll("h1")[0].innerHTML = "Player 1 Wins";
-    }else if(randomNumber1 == randomNumber2){
-        document.querySelectorAll("h1")[0].innerHTML = "Both Player Wins";
-    }else{
-        document.querySelectorAll("h1")[0].innerHTML = "Player 2 Wins";
+
+/**** select color */
+let selectedColor = document.querySelector('.colorButtons');
+let umbrela = document.getElementById('umbrela');
+let bgColor = document.querySelector('body');
+
+selectedColor.onclick = (e)=>{
+    let color = e.target.id;
+    if(color==='yellow'){
+        //yellow umbrela
+        umbrela.src='/images/Yello umbrella.png';
+        bgColor.style.background="lightyellow"
+    }else if(color==='red'){
+        //red umbrela
+        umbrela.src='/images/#';
+    }else if(color==='blue'){
+        //blue umbrela
+        umbrela.src='/images/Blue umbrella.png';
+        bgColor.style.background="lightblue"
+    }else if(color==='pink'){
+        //pink umbrela
+        umbrela.src='/images/Pink umbrella.png';
+        bgColor.style.background="lightpink"
     }
+    
+}
+
+/*** file upload */
+const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+    console.log('event', event);
 }
