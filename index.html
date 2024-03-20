@@ -32,8 +32,11 @@
             <p>Upload a logo for an instant preview. </p>
             <p>.png and .jpg files only. Max file size is 5MB. </p>
             <button >
-              <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
-                <input id="file" type="file" accept=".png, .svg, .jpg, .jpeg" placeholder="Upload Log" style="color: #fff;" >
+              <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data" style="color: gray">
+                <label for="file" class="file-upload-icon">
+                  <img src="./images/upload_icon.svg" alt="Upload icon"> Upload Logo
+                </label>
+                <input id="file" type="file" accept=".png, .svg, .jpg, .jpeg" placeholder="Upload Log" style="color: gray;" >
               </form> 
             </button>
           </div>
