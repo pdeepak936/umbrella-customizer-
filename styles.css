@@ -1,17 +1,15 @@
 body {
-  background-color: lightblue;
-  
+  background-color: rgb(93, 94, 95) !important;
+}
+
+div{
 }
 
 .container {
-  margin-top: 5rem;
+  margin-top: 15% !important;
   width: 1000px;
-  height: 500px;
   margin: auto;
   border: 1px black ;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -31,24 +29,38 @@ body {
   margin: 5px;
 }
 
-h1 {
-  text-shadow: 5px 0 #232931;
-  font-size: 3rem;
-  color: #4ECCA3;
-}
 
-p {
-  font-size: 1.2rem;
-  color: #4ECCA3;
-}
-
-img {
-  width: 500px;
-  height: 500px;
-}
 
 footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
+}
+
+.umbrella{
+  background-image: url('./images/Blue_umbrella.png') ;
+  height:455px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo{
+  display: none;
+  width: 10%;
+  height: 5%;
+  margin-top: 80%;
+  margin-left: 45%;
+}
+
+.left{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.right{
+  padding-left: 10%;
+  align-items: center;
+  padding-top: 10%;
 }

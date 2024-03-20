@@ -11,11 +11,12 @@
       <div class="content" >
         <div class="main_box" style="display: flex;">
           <!-- umbrela -->
-          <div class="left">
-            <img class="umbrela_img" id="umbrela" src="images/Blue umbrella.png">
+          <div class="left" style="width: 50%;">
+            <div class="umbrella"><img class="logo" id="logo" src=""></div>
+            <!-- <img class="umbrela_img" id="umbrela" src="images/Blue umbrella.png"> -->
           </div>
           <!-- color buttons -->
-          <div class="right">
+          <div class="right" style="width: 50%;">
             <h1>Custom Umbrella</h1>
             <div class="colorButtons">
               <button onclick="clickFunction()" style="background: black;" id="black" class="btn"></button>
@@ -27,15 +28,15 @@
               <button onclick="clickFunction()" style="background: pink;" id="pink" class="btn"></button>
               <button onclick="clickFunction()" style="background: rgb(248, 2, 43);" id="red" class="btn"></button>
             </div>
-            <h3 class="select_umbrela_title"> Select umbrela colour </h3>
+            <h3 style="color: black;" class="select_umbrela_title"> Select umbrela colour </h3>
             <p>Upload a logo for an instant preview. </p>
             <p>.png and .jpg files only. Max file size is 5MB. </p>
-            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
-              <input id="file" type="file" accept=".png, .svg, .jpg, .jpeg" placeholder="Upload Log" style="color: #fff;">
-              <button type="submit">Upload</button>
-            </form>
+            <button >
+              <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                <input id="file" type="file" accept=".png, .svg, .jpg, .jpeg" placeholder="Upload Log" style="color: #fff;" >
+              </form> 
+            </button>
           </div>
-          
         </div>
       </div>
     </div>
